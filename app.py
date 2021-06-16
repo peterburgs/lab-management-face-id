@@ -92,7 +92,7 @@ def face2Embedding(image):
     if len(faces) < 1:
         return None, "Cannot detect face"
     if len(faces) > 1:
-        return None, "Too many faces"
+        return None, "Too many faces. Please try again"
     return faces[0].embedding, faces[0].bbox.astype(np.int).flatten()
 
 

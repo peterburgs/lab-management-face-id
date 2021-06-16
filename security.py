@@ -4,7 +4,7 @@ from google.oauth2 import id_token
 from google.auth.transport import requests
 from werkzeug.datastructures import ImmutableMultiDict
 
-CLIENT_ID = '842135343547-0l11d5qs9q4jqchn7i45p75e5bf2jpqf.apps.googleusercontent.com'
+CLIENT_ID = '438750535286-ta0br0evq0lv3jn05apr6n06ll4d82eq.apps.googleusercontent.com'
 
 
 def require_auth():
