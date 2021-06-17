@@ -234,8 +234,10 @@ api.add_resource(VerifyFace, "/verify")
 api.add_resource(User, "/user")
 api.add_resource(DeleteFace, "/face/<string:user_id>")
 
+port = int(os.environ.get('PORT', 8080))
+
 if __name__ == '__main__':
     from db import db
 
     db.init_app(app)
-    app.run(port=5000, debug=True)
+    app.run(threaded=True, host='0.0.0.0', port=port)
